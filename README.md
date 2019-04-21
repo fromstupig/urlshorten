@@ -1,6 +1,3 @@
----
-tags: Golang
----
 # Week 1.3 Assignment: URL Shortener
 
 ## Assignment details
