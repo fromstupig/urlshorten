@@ -89,7 +89,10 @@ func Create(t table, db *sql.DB) {
 }
 
 func check(err error, db *sql.DB) {
-	if err != nil {
-		log.Fatal(err)
+	if err == nil {
+		return
 	}
+
+	log.Fatal(err)
+	db.Close()
 }
