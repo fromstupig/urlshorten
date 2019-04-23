@@ -141,7 +141,7 @@ func randomString(len int) string {
 	for i := 0; i < len; i++ {
 		n := rand.Intn(35)
 
-		if n <= 10 {
+		if n < 10 {
 			bytes[i] = byte(48 + n)
 		} else if n > 25 {
 			bytes[i] = byte(65 + n - 10)
